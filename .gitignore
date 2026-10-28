@@ -1,0 +1,69 @@
+# ============================================================
+# .gitignore for Microplastic Segmentation Final Deliverables
+# ============================================================
+
+# -------------------------
+# 1. LARGE MODEL WEIGHTS
+# GitHub has a 100MB file limit. Upload weights to Google Drive
+# or Hugging Face and link them in the README instead.
+# -------------------------
+*.pt
+*.pth
+*.onnx
+*.torchscript
+
+# -------------------------
+# 2. RAW DATASET IMAGES
+# The full dataset is ~3GB. Never upload this to GitHub.
+# Link to your Google Drive dataset folder in README instead.
+# -------------------------
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+
+# -------------------------
+# 3. PYTHON CACHE
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+.Python
+
+# -------------------------
+# 4. VIRTUAL ENVIRONMENTS
+# -------------------------
+venv/
+env/
+.env/
+.venv/
+
+# -------------------------
+# 5. ULTRALYTICS / YOLO CACHE
+# -------------------------
+runs/
+*.cache
+datasets/
+
+# -------------------------
+# 6. JUPYTER NOTEBOOK OUTPUTS
+# -------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# -------------------------
+# 7. SYSTEM FILES
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# 8. EXCEL / CSV TEMP FILES
+# (Keep .csv but exclude temp Excel locks)
+# -------------------------
+~$*.xlsx
+~$*.csv

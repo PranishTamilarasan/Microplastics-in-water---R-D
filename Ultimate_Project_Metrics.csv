@@ -1,0 +1,9 @@
+Metric,MDPI Base Paper Framework (MobileNetV4 + FPN),Dual-ViT Hybrid Pipeline (RT-DETR + SAM-2.1),Native YOLO11s-Seg (Single-Stage)
+mIoU,0.791 (Inflated by BG),0.698 / 0.824 (w/ BG),0.642 / 0.781 (w/ BG)
+F1 Score,0.810 (Estimated from Dice),0.842,"0.766 (P: 0.811, R: 0.728)"
+Inference Time (ms),~ 18.5 ms,~ 75.0 ms (Prompter + Decoder),6.2 ms (Screaming Fast)
+Params (M),15.8 M,112.5 M (32M + 80M),9.4 M
+FLOPs (B),12.4 B,244.0 B,28.6 B
+Strict Biological Flat mIoU,0.573 (Fails on Multi-class),0.698 (Bypasses Instance Penalty!),0.642
+Instance Mask mAP@50 (Global),N/A (Semantic limit),~ 0.831 (Bounding Box Confidence),0.779 (0.953 on Spheres!)
+Particle Count Prediction (Val Set),FAILED (Fuses overlapping items),636 (vs Ground Truth 695),705 (Matches 695 GT almost perfectly!)
